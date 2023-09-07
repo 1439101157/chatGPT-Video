@@ -16,7 +16,7 @@
 - [📖 项目简介](#-项目简介)
 - [🏢 软件架构](#-软件架构)
 - [🛠 特性](#-特性)
-  -[🔢不同功能的聊天接口](#提供了多个完整的chatGPT聊天方式API)
+  - [🔢不同功能的聊天接口](#提供了多个完整的chatGPT聊天方式API)
     - [1.OneMessageChatwithGPT单条信息交换功能](#1OneMessageChatwithGPT为单条信息交换功能)
     - [2.ShortChatWithGPT流式信息交互](#2ShortChatWithGPT为流式信息交互)
     - [3.MediumChatWithGPT单向聊天记录流式信息交互](#3MediumChatWithGPT为单向聊天记录流式信息交互)
