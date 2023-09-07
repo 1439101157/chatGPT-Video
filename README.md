@@ -16,11 +16,13 @@
 - [📖 项目简介](#-项目简介)
 - [🏢 软件架构](#-软件架构)
 - [🛠 特性](#-特性)
+
   - [🔢不同功能的聊天接口](#提供了多个完整的chatGPT聊天方式API)
     - [1.OneMessageChatwithGPT单条信息交换功能](#1OneMessageChatwithGPT为单条信息交换功能)
     - [2.ShortChatWithGPT流式信息交互](#2ShortChatWithGPT为流式信息交互)
     - [3.MediumChatWithGPT单向聊天记录流式信息交互](#3MediumChatWithGPT为单向聊天记录流式信息交互)
     - [4.LongChatWithGPT为双向聊天记录流式信息交互](#4LongChatWithGPT为双向聊天记录流式信息交互)
+
 - [🚀 快速开始](#-快速开始)
 - [💬 交流](#如果有什么需要改进联系我欢迎交流改进)
 - [🙏 鸣谢](#鸣谢)
@@ -28,6 +30,7 @@
 # 📖 项目简介
 
 我能用这个程序干什么？
+
 - [💬提供了多个完整的chatGPT聊天方式API。](#提供了多个完整的chatGPT聊天方式API)
 - [🎬提供了视频网站的视频解析功能。](#视频网站的视频解析)
 - [⚡文件下载功能。](#文件下载功能)
