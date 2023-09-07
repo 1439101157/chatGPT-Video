@@ -57,7 +57,8 @@
 ### 1.OneMessageChatwithGPT为单条信息交换功能
 
 该接口适合一些简单的一问一答制功能
-
+<br>
+<br>
 
 ### 2.ShortChatWithGPT为流式信息交互
 
@@ -131,6 +132,7 @@ Message GPTMessage = Message.of("我会在每次聊天中添加我们的聊天�
 一旦提取出文字，你可以使用 `ToContent()` 函数来获取主要内容。
 - 最后，我建议将提取出来的文字传递给 ChatGPT 进行文本修正，然后再将修正后的文本发送给 ChatGPT。
 
+<br><br>
 
 
 ## ⚡文件下载功能
@@ -178,6 +180,7 @@ Message GPTMessage = Message.of("我会在每次聊天中添加我们的聊天�
         return realUrl;
 ```
 ## 💭如果你想修改chatGPT的配置等内容
+<br><br>
 
 - 配置方式参考[PlexPt-chatGPT-Java]( https://github.com/PlexPt/chatgpt-java)。
 
