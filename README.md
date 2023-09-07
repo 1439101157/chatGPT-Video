@@ -22,7 +22,7 @@
         - [3.MediumChatWithGPT单向聊天记录流式信息交互](#3MediumChatWithGPT为单向聊天记录流式信息交互)
         - [4.LongChatWithGPT为双向聊天记录流式信息交互](#4LongChatWithGPT为双向聊天记录流式信息交互)
 - [🚀 快速开始](#-快速开始)
-- [💬 交流](#如果有什么需要改进联系我，欢迎交流改进)
+- [💬 交流](#如果有什么需要改进联系我欢迎交流改进)
 - [🙏 鸣谢](#鸣谢)
 
 # 📖 项目简介
@@ -190,7 +190,7 @@ Message GPTMessage = Message.of("我会在每次聊天中添加我们的聊天�
 - OpenAi：https://openai.com/
 - [PlexPt]()的[chatGPT-JAVA](https://github.com/PlexPt/chatgpt-java) 的开源SDK。
 
-# ☕ 如果有什么需要改进联系我，欢迎交流改进。[![Static Badge](https://img.shields.io/badge/KFCV50-%23f83600%200%25)](src/main/resources/static/image/1694071820309.png)
+# ☕如果有什么需要改进联系我，欢迎交流改进。[![Static Badge](https://img.shields.io/badge/KFCV50-%23f83600%200%25)](src/main/resources/static/image/1694071820309.png)
 欢迎进行技术以及代码交流 包括后续的更新
 <div align=center>
 <img src="src/main/resources/static/image/6639950720486355 (1).jpg" width="300"/> 
