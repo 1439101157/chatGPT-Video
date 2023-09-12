@@ -8,10 +8,11 @@ import cn.hutool.core.io.file.FileReader;
 public class GetFileContent {
 
     public static void main(String[] args) throws IOException {
+        File file=new File("filetree.txt");
         // 创建一个BufferedReader对象，用来读取txt文件中的每一行路径
-        FileReader reader =new FileReader("D:\\project\\chat-gpt-video\\filetree.txt");
+        FileReader reader =new FileReader(file.getAbsolutePath());
         // 创建一个BufferedWriter对象，用来写入另一个txt文本中
-        BufferedWriter writer = new BufferedWriter(new FileWriter("D:\\project\\chat-gpt-video\\filecontent.txt"));
+        BufferedWriter writer = new BufferedWriter(new FileWriter("filecontent.txt"));
         // 定义一个字符串变量，用来存储每一行路径
         List<String> lineList = reader.readLines();
         // 使用循环，逐行读取路径，并判断是否为空

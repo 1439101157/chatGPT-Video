@@ -42,7 +42,7 @@ public class GetFileTree {
 
     public static void main(String[] args) throws IOException {
         File folder = new File("D:\\project\\chat-gpt-video");
-        BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("D:\\project\\chat-gpt-video\\filetree.txt"), "UTF-8"));
+        BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("filetree.txt"), "UTF-8"));
         crawlFiles(folder, writer, 0);
         writer.close();
 
