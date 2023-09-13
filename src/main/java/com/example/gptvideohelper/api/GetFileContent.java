@@ -24,6 +24,7 @@ public class GetFileContent {
             // 在每个文件内容之后，添加一个换行符，以便区分不同的文件
             writer.newLine();
         }
+
         writer.close();
     }
 }

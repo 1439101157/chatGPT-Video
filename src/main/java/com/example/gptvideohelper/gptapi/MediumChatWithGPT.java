@@ -32,15 +32,19 @@ public class MediumChatWithGPT {
                 .init();
         Scanner scanner = new Scanner(System.in);
         String text="1";
-        Message systeMessage = Message.of("这是一个视频提取出来的内容，可能有部分内容是同音字或者词，需要你自己辨别，在辨别后请分析后给出视频大意");//系统提示词
+        System.out.println("输入内容");
+        String content=scanner.nextLine();
+        Message systeMessage = Message.of("这是一个视频提取出来的内容，可能有部分内容是同音字或者词，需要你自己辨别："+content+"内容输入完毕");//系统提示词
         chatContextHolder.add(userId,systeMessage);
         ConsoleStreamListener listener = new ConsoleStreamListener();
+        int i=0;
+        System.out.println("输入问题");
         while (text != null&&!text.isEmpty()) {
             System.out.print("\n");
             text = scanner.nextLine();
             System.out.print("\n");
             if (!text.equals("结束")) {
-                Message message = Message.of(text);
+                Message message = Message.of("每条对话我都会发送我和你的单向聊天记录即只有我的提问，你需要自己按顺序梳理问题编号并忽略前面的问题只回答我的最后一个问题，以下是我的问题编号"+i+"内容:"+text+"。我的问题描述完毕");
                 chatContextHolder.add(userId, message);
                 Messages=chatContextHolder.get(userId);
                 ChatCompletion chatCompletion = ChatCompletion.builder()
@@ -48,6 +52,7 @@ public class MediumChatWithGPT {
                         .build();
                 System.out.println("chatGPT说：");
                 chatGPTStream.streamChatCompletion(chatCompletion, listener);
+                i++;
             } else break;
         }
     }
