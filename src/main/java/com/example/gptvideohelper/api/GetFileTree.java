@@ -3,6 +3,8 @@ package com.example.gptvideohelper.api;
 import java.io.*;
 import java.util.Arrays;
 
+import static com.example.gptvideohelper.common.ConfigParameter.PROJECT_PATH;
+
 public class GetFileTree {
     public static void crawlFiles(File file, BufferedWriter writer, int level) throws IOException {
 
@@ -41,7 +43,7 @@ public class GetFileTree {
     }
 
     public static void main(String[] args) throws IOException {
-        File folder = new File("D:\\project\\chat-gpt-video");
+        File folder = new File(PROJECT_PATH);
         BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("filetree.txt"), "UTF-8"));
         crawlFiles(folder, writer, 0);
         writer.close();

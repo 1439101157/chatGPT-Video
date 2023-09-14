@@ -9,8 +9,8 @@ public interface ConfigParameter {
      * @return
      **/
 
-    String PROXY_IP ="";//代理的IP地址 列如127.0.0.1
-    int PROXY_PORT=7880;//代理走的端口号 列如7080 要改成自己的
+    String PROXY_IP ="127.0.0.1";//代理的IP地址 列如127.0.0.1
+    int PROXY_PORT=7890;//代理走的端口号 列如7080 要改成自己的
 
     String TXT_Path = "src\\main\\resources\\output\\test.txt";
     String VIDEO_PATH = "src\\main\\resources\\video\\video.mp4";
@@ -18,4 +18,7 @@ public interface ConfigParameter {
     String KEY_SECRET="";//讯飞API接口
     String AUDIO_PATH = "src\\main\\resources\\audio\\audio.wav";
     String GPT_API_KEY="";//chatGPT的API密钥
+
+    String EXCEL_PATH = "";
+    String PROJECT_PATH = "";
 }

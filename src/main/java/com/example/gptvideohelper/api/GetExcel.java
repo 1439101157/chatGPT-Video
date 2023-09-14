@@ -1,19 +1,21 @@
 package com.example.gptvideohelper.api;
 
 import cn.hutool.core.collection.CollUtil;
+import cn.hutool.core.io.file.FileReader;
 import cn.hutool.core.io.file.FileWriter;
 import cn.hutool.core.util.StrUtil;
-import cn.hutool.poi.excel.ExcelReader;
-import cn.hutool.poi.excel.ExcelUtil;
+import cn.hutool.poi.excel.*;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static com.example.gptvideohelper.common.ConfigParameter.EXCEL_PATH;
 
 
 public class GetExcel {
     // 读取Excel文件的文本信息
     public static void main(String[] args) {
-        ExcelReader reader = ExcelUtil.getReader("C:\\Users\\Administrator\\Desktop\\1_华润费用(结算).xlsx");
+        ExcelReader reader = ExcelUtil.getReader(EXCEL_PATH);
         List<List<Object>> readAll = reader.read();
         List<String>rowStrings=new ArrayList<>();
         for(List<Object> list : readAll){

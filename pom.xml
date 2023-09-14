@@ -24,6 +24,12 @@
             <version>5.2.2</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>5.2.2</version>
+        </dependency>
+
         <!-- 在pom.xml文件中，添加JAVE 2.6.0的依赖 -->
             <dependency>
                 <groupId>ws.schild</groupId>
